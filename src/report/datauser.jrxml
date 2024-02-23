@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="datauser" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0af8bfd7-1c6a-4252-a00b-ba4416d49e88">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     db_pelanggan.`id_pelanggan` AS db_pelanggan_id_pelanggan,
+     db_pelanggan.`nama` AS db_pelanggan_nama,
+     db_pelanggan.`jenis_kelamin` AS db_pelanggan_jenis_kelamin,
+     db_pelanggan.`wa` AS db_pelanggan_wa,
+     db_pelanggan.`email` AS db_pelanggan_email,
+     db_pelanggan.`alamat` AS db_pelanggan_alamat
+FROM
+     `db_pelanggan` db_pelanggan]]>
+	</queryString>
+	<field name="db_pelanggan_id_pelanggan" class="java.lang.String"/>
+	<field name="db_pelanggan_nama" class="java.lang.String"/>
+	<field name="db_pelanggan_jenis_kelamin" class="java.lang.String"/>
+	<field name="db_pelanggan_wa" class="java.lang.Integer"/>
+	<field name="db_pelanggan_email" class="java.lang.String"/>
+	<field name="db_pelanggan_alamat" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
